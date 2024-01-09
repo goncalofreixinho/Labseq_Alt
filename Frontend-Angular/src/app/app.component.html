@@ -1,0 +1,8 @@
+<main>
+  <article>
+    <input type="number" [ngModel]="n" (ngModelChange)="onNChange($event)" #inputNumber="ngModel">
+    <button (click)="onGetLabseqValue()">Get Labseq Value</button>
+    <p *ngIf="labseqValue !== undefined">Labseq Value: {{ labseqValue }}</p>
+    <p *ngIf="executionTime !== undefined">Execution Time: {{ executionTime }} ms</p>
+  </article>
+</main>
